@@ -15,7 +15,12 @@ require("dotenv").config();
 let salt = bcrypt.genSaltSync(10);
 let secret = process.env.SECRET;
 
-app.use(cors({ credentials: true, origin: "https://b-blogger.onrender.com" }));
+app.use(
+  cors({
+    credentials: true,
+    origin: "https://superlative-stardust-1e7d47.netlify.app",
+  })
+);
 app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
