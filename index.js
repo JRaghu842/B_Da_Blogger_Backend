@@ -18,7 +18,7 @@ let secret = process.env.SECRET;
 app.use(
   cors({
     credentials: true,
-    origin: "https://superlative-stardust-1e7d47.netlify.app",
+    origin: "https://b-da-blogger.netlify.app",
   })
 );
 app.use(express.json());
